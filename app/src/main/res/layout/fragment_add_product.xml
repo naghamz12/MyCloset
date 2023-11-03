@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData.AddProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <EditText
+            android:id="@+id/etDescAddProductFragment"
+            android:layout_width="204dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="548dp"
+            android:layout_marginBottom="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="ViewOptions"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/etAddressAddRestaurantFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etTakeAphotoAddProductFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="TakeAPhoto"
+            android:inputType="text|textPostalAddress"
+            app:layout_constraintStart_toStartOf="@+id/etDescAddProductFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etDescAddProductFragment" />
+
+        <Button
+            android:id="@+id/btnAddAddProductFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

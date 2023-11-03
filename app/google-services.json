@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "516362612451",
+    "project_id": "mycloset-441af",
+    "storage_bucket": "mycloset-441af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516362612451:android:ca0a745f05fe94b5c65fd6",
+        "android_client_info": {
+          "package_name": "com.example.mycloset"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsB2P6CYfhn1dYKdHCeq7ZabjNCEQU8jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
