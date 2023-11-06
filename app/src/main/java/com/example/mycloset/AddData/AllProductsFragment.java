@@ -83,8 +83,7 @@ public class AllProductsFragment extends Fragment {
 
         fbs = FirebaseServices.getInstance();
         prods = new ArrayList<>();
-        fbs.getFire().collection("Product" +
-                "").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        fbs.getFire().collection("products").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                 for (DocumentSnapshot dataSnapshot: queryDocumentSnapshots.getDocuments()){
