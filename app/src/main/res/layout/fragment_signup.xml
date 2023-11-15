@@ -4,44 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F5F5"
     tools:context=".LoginSignup.ForgotFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#00DDD4D4"
+        android:backgroundTint="#F6EBEB">
 
         <EditText
             android:id="@+id/etEmailSignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="173dp"
+            android:layout_width="225dp"
+            android:layout_height="44dp"
+            android:background="#00261F27"
+            android:backgroundTint="#5A4D5C"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="#E040FB"
+            android:textColorHighlight="#A357B1"
+            android:textColorHint="#92639A"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="286dp" />
 
         <EditText
             android:id="@+id/etPasswordSignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_width="224dp"
+            android:layout_height="39dp"
+            android:background="#005A4D5C"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintStart_toStartOf="@+id/etEmailSignup"
-            app:layout_constraintTop_toBottomOf="@+id/etEmailSignup" />
+            android:textColor="#B87ABF"
+            android:textColorHighlight="#676078"
+            android:textColorHint="#825C88"
+            android:textColorLink="#E040FB"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="389dp" />
 
         <Button
             android:id="@+id/btnSignupSignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
+            android:layout_width="226dp"
+            android:layout_height="82dp"
+            android:backgroundTint="#005E3939"
             android:text="Sign up"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPasswordSignup" />
+            android:textColor="#BD0745"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#00806A6A"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="520dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="415dp"
+            android:layout_height="286dp"
+            android:src="@drawable/closet"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
