@@ -10,25 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="409dp"
-            android:layout_height="283dp"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/closet"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="1dp" />
-
         <EditText
             android:id="@+id/etEmailLogin"
             android:layout_width="286dp"
             android:layout_height="59dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="64dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="285dp" />
+            tools:layout_editor_absoluteY="263dp" />
 
         <EditText
             android:id="@+id/etPasswordLogin"
@@ -64,21 +55,31 @@
             android:textColor="#B6768D"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnForgotLogin"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin"
+            app:layout_constraintVertical_bias="0.636" />
 
         <Button
             android:id="@+id/btnForgotLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginBottom="36dp"
             android:backgroundTint="#00D5D0D1"
             android:text="Forgot Password"
             android:textColor="#AC7085"
             android:textColorHighlight="#D81B60"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="409dp"
+            android:layout_height="263dp"
+            android:src="@drawable/closetlogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
