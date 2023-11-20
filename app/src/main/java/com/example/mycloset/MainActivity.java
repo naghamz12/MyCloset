@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import com.example.mycloset.AddData.AddProductFragment;
 import com.example.mycloset.LoginSignup.LoginFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,9 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseServices fbs = FirebaseServices.getInstance();
 
-        if (fbs.getAuth().getCurrentUser() == null)
-            gotoLoginFragment();
-        else gotoHomeFragment();
+        //if (fbs.getAuth().getCurrentUser() == null)
+          //  gotoLoginFragment();
+        //else gotoHomeFragment();
+        gotoAddProductFragment();
 
     }
 
@@ -31,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
     private void gotoLoginFragment(){
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frameLayoutMain,new LoginFragment());
+        ft.commit();
+    }
+
+    private void gotoAddProductFragment(){
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain,new AddProductFragment());
         ft.commit();
     }
 }

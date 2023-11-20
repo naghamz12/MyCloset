@@ -106,7 +106,7 @@ public class AddProductFragment extends Fragment {
                 // add data to firestore
                 Product rest = new Product(etViewOptions,etTakeAPhoto);
 
-                fbs.getFire().collection("products").add(rest).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                fbs.getFire().collection("product").add(rest).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(getActivity(), "Successfully added your product!", Toast.LENGTH_SHORT).show();
