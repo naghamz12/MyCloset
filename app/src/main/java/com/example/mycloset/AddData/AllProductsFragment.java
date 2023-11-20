@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,6 +31,8 @@ public class AllProductsFragment extends Fragment {
 
     private FirebaseServices fbs;
     private ArrayList<Product> prods;
+    private RecyclerView rvProds;
+    private ProductAdapter adapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -83,6 +87,11 @@ public class AllProductsFragment extends Fragment {
 
         fbs = FirebaseServices.getInstance();
         prods = new ArrayList<>();
+        rvProds = getView().findViewById(R.id.rvProductsProFragment);
+        adapter = new ProductAdapter(getActivity(), prods);
+        rvProds.setAdapter(adapter);
+        rvProds.setHasFixedSize(true);
+        rvProds.setLayoutManager(new LinearLayoutManager(getActivity()));
         fbs.getFire().collection("products").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

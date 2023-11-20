@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFBFB"
     tools:context=".LoginSignup.ForgotFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,25 +12,48 @@
 
         <EditText
             android:id="@+id/etEmailForgot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_width="236dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="151dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnSendForgot"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <Button
             android:id="@+id/btnSendForgot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="97dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="163dp"
+            android:background="#32373536"
+            android:backgroundTint="#0F755454"
             android:text="Send"
+            android:textColor="#676271"
+            android:textColorHighlight="#89738C"
+            android:textColorHint="#B85555"
+            android:textColorLink="#E91E63"
+            app:iconTint="#7C3838"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/etEmailForgot"
+            app:layout_constraintStart_toStartOf="@+id/etEmailForgot"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailForgot" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="386dp"
+            android:layout_height="270dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="65dp"
+            android:src="@drawable/closetlogo"
+            app:layout_constraintBottom_toTopOf="@+id/etEmailForgot"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etEmailForgot" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
