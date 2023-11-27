@@ -20,6 +20,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:textColorHint="#AD1C1616"
             app:layout_constraintBottom_toTopOf="@+id/btnLoginLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -28,20 +29,21 @@
 
         <EditText
             android:id="@+id/etPasswordLogin"
-            android:layout_width="279dp"
-            android:layout_height="45dp"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
             android:layout_marginTop="60dp"
             android:layout_marginEnd="71dp"
             android:layout_marginBottom="64dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textColorHint="#B7130F0F"
             app:layout_constraintBottom_toTopOf="@+id/btnLoginLogin"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/etEmailLogin"
             app:layout_constraintTop_toBottomOf="@+id/etEmailLogin"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/btnLoginLogin"

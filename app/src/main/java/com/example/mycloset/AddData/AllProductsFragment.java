@@ -96,9 +96,9 @@ public class AllProductsFragment extends Fragment {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                 for (DocumentSnapshot dataSnapshot: queryDocumentSnapshots.getDocuments()){
-                    Product rest = dataSnapshot.toObject(Product.class);
+                    Product cloth = dataSnapshot.toObject(Product.class);
 
-                    prods.add(rest);
+                    prods.add(cloth);
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {

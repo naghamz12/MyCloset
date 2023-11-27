@@ -104,9 +104,9 @@ public class AddProductFragment extends Fragment {
                 // data validation
 
                 // add data to firestore
-                Product rest = new Product(etViewOptions,etTakeAPhoto);
+                Product cloth = new Product(etViewOptions,etTakeAPhoto);
 
-                fbs.getFire().collection("product").add(rest).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                fbs.getFire().collection("product").add(cloth).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(getActivity(), "Successfully added your product!", Toast.LENGTH_SHORT).show();
