@@ -12,6 +12,7 @@ public class Product {
     public Product(String viewOptions, String takeAPhoto) {
         ViewOptions = viewOptions;
         TakeAPhoto = takeAPhoto;
+
     }
 
     public String getViewOptions() {

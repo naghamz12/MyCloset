@@ -92,6 +92,7 @@ public class AddProductFragment extends Fragment {
     private void connectComponents() {
         fbs = FirebaseServices.getInstance();
         btnAdd = getView().findViewById(R.id.btnAddAddProductFragment);
+
         etTakeAPhoto = getView().findViewById(R.id.etTakeAphotoAddProductFragment);
         rvProducts = getView().findViewById(R.id.rvProductsProFragment);
 
