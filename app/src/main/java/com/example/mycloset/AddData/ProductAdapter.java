@@ -36,8 +36,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Product product = productList.get(position);
-        holder.tvTittle.setText(product.getTakeAPhoto());
-        holder.tvTittle.setText(product.getViewOptions());
+        holder.clothName.setText(product.getTakeAPhoto());
+        holder.clothPhoto.getText(product.getViewOptions());
+        if (product.getViewOptions() == null || product.getViewOptions().isEmpty())
+        {
+             productList.get().load(R.drawable.ic_fav).into(holder.itemView);
+        }
+        else {
+            productList.get().load(product.getViewOptions()).into(holder.clothName);
+        }
     }
 
     @Override
@@ -46,14 +53,16 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView tvPrice, tvTittle, tvDescription;
+        TextView clothName ;
+
+        ImageView pieceName , clothPhoto ;
         int position;
 
         ViewHolder(View itemView) {
             super(itemView);
-            tvTittle = itemView.findViewById(R.id.tvTittleProItem);
-            tvPrice = itemView.findViewById(R.id.tvPriceProItem);
-            tvDescription = itemView.findViewById(R.id.tvDescriptionProItem);
+            clothPhoto = itemView.findViewById(R.id.rvProductsProFragment);
+            clothName = itemView.findViewById(R.id.rvProductsProFragment);
+            pieceName = itemView.findViewById(R.id.rvProductsProFragment);
             itemView.setOnClickListener(this);
         }
 

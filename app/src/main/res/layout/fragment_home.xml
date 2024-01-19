@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="94dp"
+            android:layout_height="47dp"
+            android:background="#00FFFFFF"
+            android:text="LogIn"
+            android:textColor="#949C27B0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="644dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            android:text="SignUp"
+            android:textColor="#8A9C27B0"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="632dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="242dp"
+            android:layout_height="58dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#F0430922"
+            android:text="Take A Photo"
+            android:textColor="#CB370F1C"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="237dp"
+            android:layout_height="67dp"
+            android:background="#00E91EDF"
+            android:text="View Options"
+            android:textColor="#EE55142A"
+            android:textColorHighlight="#19FFFFFF"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="370dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="415dp"
+            android:layout_height="242dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/closetlogo"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
