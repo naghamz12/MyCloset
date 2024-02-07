@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,13 +38,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Product product = productList.get(position);
         holder.clothName.setText(product.getTakeAPhoto());
-        holder.clothPhoto.getText(product.getViewOptions());
+        //holder.clothPhoto.getText(product.getViewOptions());
         if (product.getViewOptions() == null || product.getViewOptions().isEmpty())
         {
-             productList.get().load(R.drawable.ic_fav).into(holder.itemView);
+             Picasso.get().load(R.drawable.closet).into(holder.itemView);
         }
         else {
-            productList.get().load(product.getViewOptions()).into(holder.clothName);
+            picasso.get().load(product.getViewOptions()).into(holder.clothName);
         }
     }
 
